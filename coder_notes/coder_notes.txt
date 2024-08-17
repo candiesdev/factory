@@ -1,9 +1,0 @@
-# Crear base de datos PostgreSQL
-$sudo -u postgres psql
-postgres=#CREATE DATABASE factory;
-postgres=#CREATE USER factusr WITH PASSWORD 'dbdjfact';
-postgres=#ALTER ROLE factusr SET client_encoding TO 'utf8';
-postgres=#ALTER ROLE factusr SET default_transaction_isolation TO 'read committed';
-postgres=#ALTER ROLE factusr SET timezone TO 'UTC';
-postgres=#GRANT ALL PRIVILEGES ON DATABASE factory TO factusr;
-postgres=#\q
