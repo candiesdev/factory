@@ -1,0 +1,51 @@
+{% load static %}
+
+<header>
+  <div class="container bg-body-light">
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src='{% static "home/img/logo_web_512x512.png" %}' alt="TICS Logo" width="50" height="50">
+        </a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Aplicaciones
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Contabilidad</a></li>
+                <li><a class="dropdown-item" href="#">Cardex</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">&Iacute;ndice</a></li>
+              </ul>
+            </li>
+            <!-- Enable if needed
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Iniciar Sesi&oacute;n</a>
+            </li>
+            <!-- Enable if needed
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Deshabilidado</a>
+            </li> -->
+          </ul>
+          <!-- Enable if needed
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
